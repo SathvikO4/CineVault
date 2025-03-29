@@ -1,0 +1,7 @@
+package com.backend.repo;
+
+import org.hibernate.type.descriptor.converter.spi.JpaAttributeConverter;
+
+public interface ComedyRepo extends JpaAttributeConverter<O, R> {
+
+}

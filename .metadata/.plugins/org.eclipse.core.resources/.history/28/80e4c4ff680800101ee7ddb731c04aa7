@@ -1,0 +1,19 @@
+package com.backend.controller;
+import com.backend.service.MovieService;
+import com.backend.entity.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/")
+public class MoviesController {
+    @Autowired private MovieService movieService;
+
+    @GetMapping("/action") public List<Action> getActionMovies() { return movieService.getAllActionMovies(); }
+    @GetMapping("/comedy") public List<Comedy> getComedyMovies() { return movieService.getAllComedyMovies(); }
+    @GetMapping("/drama") public List<Drama> getDramaMovies() { return movieService.getAllDramaMovies(); }
+    @GetMapping("/scifi") public List<SciFiMovies> getSciFiMovies() { return movieService.getAllSciFiMovies(); }
+    @GetMapping("/thriller") public List<Thriller> getThrillerMovies() { return movieService.getAllThrillerMovies(); }
+}

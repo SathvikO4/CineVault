@@ -1,0 +1,48 @@
+package com.movies.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.backend.service.MovieService;
+import com.backend.entity.Action;
+import com.backend.entity.Comedy;
+import com.backend.entity.Drama;
+import com.backend.entity.Thriller;
+import com.backend.entity.SciFiMovies;
+
+@RestController
+@CrossOrigin("*")
+public class MoviesController {
+    
+    @Autowired
+    private MovieService service;
+
+    @GetMapping("/action-movies")
+    public List<Action> getAllActionMovies() {
+        return service.getAllActionMovies();
+    }
+
+    @GetMapping("/comedy-movies")
+    public List<Comedy> getAllComedyMovies() {
+        return service.getAllComedyMovies();
+    }
+
+    @GetMapping("/drama-movies")
+    public List<Drama> getAllDramaMovies() {
+        return service.getAllDramaMovies();
+    }
+
+    @GetMapping("/thriller-movies")
+    public List<Thriller> getAllThrillerMovies() {
+        return service.getAllThrillerMovies();
+    }
+
+    @GetMapping("/scifi-movies")
+    public List<SciFiMovies> getAllSciFiMovies() {
+        return service.getAllSciFiMovies();
+    }
+}

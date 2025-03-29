@@ -1,0 +1,14 @@
+.movie-details {
+  padding: 2rem;
+  text-align: center;
+}
+
+.movie-details img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.movie-details p {
+  margin: 0.5rem 0;
+}

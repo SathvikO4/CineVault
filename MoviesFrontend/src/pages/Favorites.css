@@ -1,0 +1,58 @@
+.favorites {
+  padding: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+}
+
+.card p {
+  margin: 0;
+  color: #aaa;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #ff6f00; /* Light orange color */
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e65c00; /* Slightly darker orange for hover effect */
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+.card button {
+  margin-top: 0.5rem;
+  width: 100%;
+}
