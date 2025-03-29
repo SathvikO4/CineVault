@@ -1,9 +1,9 @@
-CineVault - Movie Library Application  
+**CineVault - Movie Library Application  **
 
- Project Overview  
+** Project Overview  **
 CineVault is a full-stack Movie Library Application built using Spring Boot, MySQL, and Vite + React. It allows users to browse, search, and manage movies across different genres. Users can add movies to their wishlist, while admins have the ability to manage the movie database.  
 
- Instructions  
+** Instructions ** 
 
  1. Download and Setup the Project  
 - Clone the repository using:  
@@ -39,7 +39,7 @@ CineVault is a full-stack Movie Library Application built using Spring Boot, MyS
 
 
 
- Database Tables  
+** Database Tables ** 
 The following tables need to be created in the MovieLibrary database:  
 
 1. sci_fi_movies  
@@ -61,20 +61,20 @@ Each table should have the following attributes:
 
 ---
 
- Running the Application
+ **Running the Application**
 1. Start MySQL and ensure the database is created.  
 2. Run Spring Boot Backend:  
-   sh
+  
    mvn spring-boot:run
    
 3. Run Vite Frontend:  
-   sh
+  
    npm run dev
    
 4. Open http://localhost:5173/ in the browser and explore CineVault! 🎬  
 
 
-Result:
+**Result:**
 ![image](https://github.com/user-attachments/assets/3127fa49-0f4a-4186-845e-6a51be3ee369)
 ![image](https://github.com/user-attachments/assets/ede88e2f-6c67-49ce-8c71-250b429b9d58)
 ![image](https://github.com/user-attachments/assets/23a14579-3dc9-45dc-937d-60c098aced94)
