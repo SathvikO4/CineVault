@@ -1,4 +1,4 @@
-**CineVault - Movie Library Application  **
+*CineVault - Movie Library Application  *
 
 ** Project Overview  **
 CineVault is a full-stack Movie Library Application built using Spring Boot, MySQL, and Vite + React. It allows users to browse, search, and manage movies across different genres. Users can add movies to their wishlist, while admins have the ability to manage the movie database.  
